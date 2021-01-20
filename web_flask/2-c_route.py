@@ -16,7 +16,7 @@ def display_hbnb():
 
 
 
-app.route("/c/<text>")
+app.route("/c/<text>", strict_slashes=False)
 def display_C_text(text):
     return ("C {}".format(text.replace('_', ' ')))
 
